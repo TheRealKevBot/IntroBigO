@@ -1,6 +1,5 @@
 // Intro To Big O Notation 
 
-
 // Constants
 const smallArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const bigArray = []
@@ -69,7 +68,7 @@ console.timeEnd(multiplyBy2(smallArray))
 console.time(multiplyBy2(bigArray))
 console.timeEnd(multiplyBy2(bigArray))
 
-// O(2n) or O(2^n) => Exponential Time Complexity
+// O(n^2) => Exponential Time Complexity
 
 function howManyOps(arr) {
     let ops1 = 0
@@ -89,7 +88,7 @@ console.timeEnd(howManyOps(smallArray))
 console.time(howManyOps(bigArray))
 console.timeEnd(howManyOps(bigArray))
 
-// O(2^n) => 
+// O(2^n) => Exponential Time Complexity
 
 function fibonacci(num) {
     return 1 >= num ? num : fibonacci(num - 1) + fibonacci(num -2)
